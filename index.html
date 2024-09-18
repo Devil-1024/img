@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <style>
+        h1 {
+            font-family: helvetica, arial, sans-serif;
+            text-align: center;
+        }
+        body {
+            width: 640px;
+            margin: 0 auto;
+        }
+        .imgs .gg{
+            display: block;
+            width: 20%;
+            float: left;
+            cursor: pointer;
+        }
+        .imgs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            cursor: pointer;
+        } 
+    </style>
+  
+</head>
+
+<body>
+    <h1>Image Gallery Example</h1>
+
+    
+    <div class="imgs">
+
+        <div class="gg">
+            <img src="image\1.jpg" alt="第一张" width="100" id="image1">
+            <p style="color: blue;">憨猫</p>
+        </div>
+
+        <div class="gg">
+            <img src="image\2.jpg" alt="第二张" width="100" id="image2">
+            <p style="color: aqua;">盒猫</p>
+        </div>
+
+        <div class="gg">
+            <img src="image\3.jpg" alt="第三张" width="100" id="image3">
+            <p style="color: blueviolet;">潦草猫</p>
+        </div>
+
+        <div class="gg">
+            <img src="image\4.jpg" alt="第四张" width="100" id="image4">
+            <p style="color: brown;">俩猫</p>
+        </div>
+        
+        <div class="gg">
+            <img src="image\5.jpg" alt="第五张" width="100" id="image5">
+            <p style="color: chartreuse;">拽猫</p>
+        </div>
+
+        <div class="gg">
+            <img src="image\6.jpg" alt="第六张" width="100" id="image6">
+            <p style="color:cornflowerblue;">丑猫</p>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <img src="" id="zoomedImage" width="500">
+    </div>
+    
+    <script src="image\script.js"></script>
+
+</body>
+
+</html>

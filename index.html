@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>miniboo</title>
+
+    <style>
+
+    html, body {
+      margin: 0;
+    }
+
+    html {
+      font-family: sans-serif;
+      height: 100%;
+    }
+
+    body {
+      overflow: hidden;
+      height: inherit;
+    }
+
+    h1 {
+      font-size: 2rem;
+      letter-spacing: -1px;
+      position: absolute;
+      margin: 0;
+      top: -4px;
+      right: 5px;
+
+      color: transparent;
+
+      text-shadow: 0 0 1px rgb(241, 12, 42);
+      
+    }
+
+    p {
+      position: absolute;
+      margin: 0;
+      top: 35px;
+      left: 2px;
+      color: #aaa;
+    }
+
+    #playButton {
+            position: absolute; /* 绝对定位 */
+            top: 20px; /* 距离顶部20像素 */
+            left: 80%; /* 距离左侧20像素 */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <h1>miniboo<hr>改小宽度<hr>方便介绍<hr><hr>碰壁改向<hr><hr>小球之间<hr>碰撞改向<hr>且变色<hr><hr>大小随机<hr>颜色随机<hr>速度随机</h1>
+    <p id="ball-count">还剩多少个球:0</p>
+    <p1 id="message" style="display: none; position: absolute; top: 86%; left: 46%; color: red; font-size: 100px; font-weight:宋体; "></p1>
+
+
+    <audio id="bgm" loop>
+      <source src="1.mp3" type="audio/mpeg"> 
+    </audio>
+
+
+    <button id="playButton">播放</button>
+
+    <canvas></canvas>  
+
+
+    <script src="main.js"></script>
+
+  </body>
+
+
+
+
+</html>
